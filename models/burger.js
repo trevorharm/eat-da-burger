@@ -13,7 +13,7 @@ var burger = {
         cb(res);
       });
     },
-    devour: function(objColVals, condition, cb) {
+    devoured: function(objColVals, condition, cb) {
       orm.update("burger", objColVals, condition, function(res) {
         cb(res);
       });
