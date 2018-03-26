@@ -1,0 +1,14 @@
+body  {
+    background-color: teal;
+} 
+
+h1, h2 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+header {
+    color: white;
+    font-size: 55px;
+}
+    
