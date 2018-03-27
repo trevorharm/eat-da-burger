@@ -1,1 +1,31 @@
-<h1> </h1>
+<div class="container">
+    <div class="row">
+        {{!-- first column to show burgers --}}
+        <div class="col-md-8">
+            <ul>
+                {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+            </ul>
+        </div>
+
+
+        {{!-- second column to show devoured burgers --}}
+        <div class="col-md-4">
+            <ul>
+                {{#each burgers}} {{#if devoured}} {{/if}} {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="ca">Burger Name:</label>
+                    <textarea class="form-control" id="ca" rows="3" name="name"></textarea>
+                </div>
+                <button type="submit">Add Burger</button>
+            </form>
+            <h2>Enter a Burger you want to eat. Hit the Submit Button</h2>
+        </div>
+    </div>
+</div>

@@ -11,4 +11,7 @@ header {
     color: black;
     font-size: 55px;
 }
-    
+
+img, header, h2, form {
+    text-align: center;
+}
